@@ -1,5 +1,7 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <h1>Example</h1>
+  </div>
 </template>
 
 <script>
@@ -8,4 +10,10 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+@use "scss/main";
+
+h1 {
+  @include main.heading-style;
+}
+</style>
